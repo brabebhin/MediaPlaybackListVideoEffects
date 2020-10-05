@@ -90,8 +90,8 @@ namespace PlaybackListVideoEffect
             var videoFiles = await picker.PickMultipleFilesAsync();
             List<StorageFile> targetFiles = new List<StorageFile>();
             int i = 0;
-            //get 100 files.
-            while (targetFiles.Count < 100)
+            //get 1000 files.
+            while (targetFiles.Count < 1000)
             {
                 targetFiles.Add(videoFiles[i]);
                 i++;
